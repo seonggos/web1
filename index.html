@@ -3,28 +3,68 @@
   <head>
     <title>WELCOME</title>
     <meta charset="utf-8">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135093536-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135093536-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-135093536-1');
+    </script>
 
-  gtag('config', 'UA-135093536-1');
-</script>
+    <!-- 아래부터 CSS, 우선순위는 태그 < .클래스 < #아이디 -->
+    <style>
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+      }
 
+      ol {
+        border-right:1px solid gray;
+        width:200px;
+        margin:0;
+        padding:20px;
+        padding-left: 32px;
+        padding-right: 15px;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 250px 1fr
+      }
+      #article{
+        padding-left: 25px;
+      }
+
+    </style>
+    <!-- 여기까지 CSS -->
   </head>
   <body>
-    <h1><a href="index.html">좋아하는 것</a><h2>
-    <ol>
-      <li><a href="1.html">좋아하는 포켓몬</a></li>
-      <li><a href="2.html">좋아하는 몬스터</a></li>
-      <li><a href="3.html">좋아하는 게임</a></li>
-    </ol>
-    <p>
-      <h2>소개</h2>
-안녕하세요. 고스가 좋아하는 것들입니다.
-    </p>
+    <h1><a href="index.html">좋아하는 것</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html" >좋아하는 포켓몬</a></li>
+        <li><a href="2.html">좋아하는 몬스터</a></li>
+        <li><a href="3.html">좋아하는 게임</a></li>
+      </ol>
+      <div id="article">
+        <p>
+          <h2>소개</h2>
+            안녕하세요. 고스가 좋아하는 것들입니다.
+        </p>
+      </div>
+    </div>
+
+
+
+
 
     <p>
       <!-- 라이브리 시티 설치 코드 -->
@@ -46,18 +86,18 @@
       </div>
       <!-- 시티 설치 코드 끝 -->
     </p>
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5c72a0b0a726ff2eea592ed9/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5c72a0b0a726ff2eea592ed9/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
   </body>
 </html>
