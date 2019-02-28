@@ -36,5 +36,9 @@ ol {
   }
   ol {
     border-right:none;
+    border-bottom:none;
+  }
+  #article{
+    border-top:1px solid gray;
   }
 }
