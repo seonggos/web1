@@ -3,23 +3,16 @@
   <head>
     <title>WELCOME</title>
     <meta charset="utf-8">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="colors.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135093536-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-135093536-1');
-    </script>
-
-    <!-- 아래부터 CSS, 우선순위는 태그 < .클래스 < #아이디 -->
+    <script src="googleAnalytics.js"></script>
     <link rel="stylesheet" href="style.css">
-
-    <!-- 여기까지 CSS -->
   </head>
   <body>
     <h1><a href="index.html">좋아하는 것</a></h1>
+    <input type="button" value="night" onclick="
+      nightDayHandler(this)
+    ">
     <div id="grid">
       <ol>
         <li><a href="1.html" >좋아하는 포켓몬</a></li>
@@ -33,43 +26,14 @@
         </p>
       </div>
     </div>
-
-
-
-
-
     <p>
       <!-- 라이브리 시티 설치 코드 -->
       <div id="lv-container" data-id="city" data-uid="MTAyMC80MjgzMC8xOTM3Nw==">
-        <script type="text/javascript">
-         (function(d, s) {
-             var j, e = d.getElementsByTagName(s)[0];
-
-             if (typeof LivereTower === 'function') { return; }
-
-             j = d.createElement(s);
-             j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-             j.async = true;
-
-             e.parentNode.insertBefore(j, e);
-         })(document, 'script');
-        </script>
+      	<script type="text/javascript" src="comment.js"></script>
       <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
       </div>
       <!-- 시티 설치 코드 끝 -->
     </p>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5c72a0b0a726ff2eea592ed9/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
+    <script type="text/javascript" src="tawk.js"></script>
   </body>
 </html>
